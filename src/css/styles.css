@@ -1,0 +1,41 @@
+/*He colocado as a las carpetas porque mis carpetas empiezan por un numero y SASS no lo reconoce para crear namespaces*/
+/*Reset de margin y paddings*/
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  /*Para que cuando un usuario haga clic en un enlace le lleve a otra parte de la pagina*/
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input, button {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  /*Cuando el usuario pase el raton por encima, aparezca la manita de hacer clic*/
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

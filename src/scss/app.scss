@@ -1,0 +1,3 @@
+/*He colocado as a las carpetas porque mis carpetas empiezan por un numero y SASS no lo reconoce para crear namespaces*/
+@use '01-external-reset' as *;
+@use '02-tools' as tools;
