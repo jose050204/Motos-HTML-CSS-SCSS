@@ -1,0 +1,18 @@
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius-base);
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-base);
+    border: none;
+    background-color: var(--color-background);
+    color: var(--color-text-secondary);
+
+    &--active{
+        background-color: var(--color-primary);
+        color: var(--color-text-primary);
+    }
+}
