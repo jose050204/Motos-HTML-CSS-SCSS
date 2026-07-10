@@ -1,0 +1,17 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2) var(--spacing-2);
+    border-radius: var(--border-radius-base);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-base);
+    border: none;
+    text-align: center;
+
+    &--primary{
+        background-color: var(--color-primary);
+        color: var(--color-text-primary);
+    }
+}
