@@ -1,0 +1,13 @@
+@use '../02-tools' as tools;
+
+:root{
+    --font-family-base: Arial, sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+
+    --font-size-title: #{tools.pixel-to-rem(32px)};
+    --font-size-large: #{tools.pixel-to-rem(24px)};
+    --font-size-medium: #{tools.pixel-to-rem(18px)};
+    --font-size-small: #{tools.pixel-to-rem(16px)};
+    --font-size-xsmall: #{tools.pixel-to-rem(14px)}; 
+}
