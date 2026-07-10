@@ -1,0 +1,8 @@
+@use '../02-tools' as tools;
+
+:root {
+    --size-icon-logo: #{tools.pixel-to-rem(70px)};
+    --size-icon-user: #{tools.pixel-to-rem(24px)};
+    --size-icon-menu: #{tools.pixel-to-rem(24px)};
+    --size-icon-discount: #{tools.pixel-to-rem(15px)};
+}
