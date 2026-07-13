@@ -1,0 +1,55 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-base);
+    padding: var(--spacing-3);
+
+    &__image{
+        width: 100%;
+        height: 274px;
+        /*Para que rellene toda la card*/
+        object-fit: cover;
+        border-radius: var(--border-radius-base);
+    }
+
+    &__chips{
+        display: flex;
+        gap: var(--spacing-2);
+    }
+
+    &__price-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-normal);
+        font-family: var(--font-family-base);
+    }
+
+    &__price{
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-normal);
+        color: var(--color-primary);
+    }
+
+    &__discount{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-1);
+        color: var(--color-danger);
+        font-size: var(--font-size-small);
+    }
+
+    &__discount-icon{
+        width: var(--size-icon-discount);
+    }
+
+    &__button{
+        width: 100%;
+    }
+}
