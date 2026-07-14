@@ -6,7 +6,7 @@
     gap: var(--spacing-2);
     background-color: var(--color-white);
     border-radius: var(--border-radius-base);
-    padding: var(--spacing-3);
+    overflow: hidden;
 }
 
 .card__image {
@@ -41,6 +41,12 @@
 }
 
 .card__discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__discount-info {
     display: flex;
     align-items: center;
     gap: var(--spacing-1);
