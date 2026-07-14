@@ -16,10 +16,10 @@ $breakpoints: (
     )
 );
 
-@mixin breakponint($nombre){
+@mixin breakpoint($nombre){
     $valores: map-get($breakpoints, $nombre);
-    $min: map-get($valores, $min);
-    $max: map-get($valores, $max);
+    $min: map-get($valores, min);
+    $max: map-get($valores, max);
 
     /*Si el valor del maximo es ninguno, entonces genera una media query que solo tiene min-width*/
     @if $max == none {
