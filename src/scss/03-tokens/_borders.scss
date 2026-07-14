@@ -1,5 +1,7 @@
-:root{
-    --border-radius-base: 8px;
-    --border-width-base: 1px;
+@use '../02-tools' as tools;
+
+:root {
+    --border-radius-base: #{tools.pixel-to-rem(8px)};
+    --border-width-base: var(--border-width-base, 1px);
     --border-style-base: solid;
 }
