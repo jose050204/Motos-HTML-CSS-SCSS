@@ -3,23 +3,24 @@
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-2);
+    gap: var(--spacing-16px);
     background-color: var(--color-white);
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius);
     overflow: hidden;
 }
 
 .card__image {
     width: 100%;
-    height: #{tools.pixel-to-rem(274px)};
+    /*Para definir una relacion proporcional entre el ancho y el alto*/
+    aspect-ratio: 385 / 274;
     /*Para que rellene toda la card*/
     object-fit: cover;
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius);
 }
 
 .card__chips {
     display: flex;
-    gap: var(--spacing-2);
+    gap: var(--spacing-16px);
 }
 
 .card__price-row {
@@ -29,13 +30,13 @@
 }
 
 .card__title {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-24px);
     font-weight: var(--font-weight-normal);
-    font-family: var(--font-family-base);
+    font-family: var(--font-family);
 }
 
 .card__price {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-16px);
     font-weight: var(--font-weight-normal);
     color: var(--color-primary);
 }
@@ -49,9 +50,9 @@
 .card__discount-info {
     display: flex;
     align-items: center;
-    gap: var(--spacing-1);
+    gap: var(--spacing-8px);
     color: var(--color-danger);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-16px);
 }
 
 .card__discount-icon {
