@@ -2,34 +2,15 @@
 
 
 $breakpoints: (
-    mobile: (
-        min:0,
-        max:467px
-    ),
-    tablet: (
-        min:468px,
-        max:1297px
-    ),
-    desktop:(
-        min:1298px,
-        max:none
-    )
+    mobile: 0,
+    tablet: 468px,
+    desktop: 1298px
 );
 
-@mixin breakpoint($nombre){
-    $valores: map-get($breakpoints, $nombre);
-    $min: map-get($valores, min);
-    $max: map-get($valores, max);
+@mixin breakpoint($nombre) {
+    $min: map-get($breakpoints, $nombre);
 
-    /*Si el valor del maximo es ninguno, entonces genera una media query que solo tiene min-width*/
-    @if $max == none {
-        @media (min-width: $min){
-            /*El @content significa que: Aqui va lo que el usuario del mixin escriba dentro de las llaves*/
-            @content;
-        }
-    } @else{
-        @media (min-width: $min) and (max-width: $max){
-            @content
-        }
+    @media (min-width: $min) {
+        @content;
     }
 }
