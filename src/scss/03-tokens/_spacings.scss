@@ -1,12 +1,12 @@
 @use '../02-tools' as tools;
 
-:root {
-    --spacing-1: #{tools.pixel-to-rem(8px)};
-    --spacing-2: #{tools.pixel-to-rem(16px)};
-    --spacing-3: #{tools.pixel-to-rem(24px)};
-    --spacing-4: #{tools.pixel-to-rem(32px)};
-    --spacing-5: #{tools.pixel-to-rem(40px)};
-    --spacing-6: #{tools.pixel-to-rem(48px)};
-    --spacing-7: #{tools.pixel-to-rem(56px)};
-    --spacing-8: #{tools.pixel-to-rem(64px)};
+@mixin spacings {
+    --spacing-8px: #{tools.pixel-to-rem(8px)};
+    --spacing-16px: #{tools.pixel-to-rem(16px)};
+    --spacing-24px: #{tools.pixel-to-rem(24px)};
+    --spacing-32px: #{tools.pixel-to-rem(32px)};
+    --spacing-40px: #{tools.pixel-to-rem(40px)};
+    --spacing-48px: #{tools.pixel-to-rem(48px)};
+    --spacing-56px: #{tools.pixel-to-rem(56px)};
+    --spacing-64px: #{tools.pixel-to-rem(64px)};
 }
