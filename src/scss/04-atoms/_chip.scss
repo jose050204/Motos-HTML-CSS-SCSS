@@ -2,11 +2,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-1) var(--spacing-2);
-    border-radius: var(--border-radius-base);
-    font-size: var(--font-size-xsmall);
+    padding: var(--spacing-8px) var(--spacing-16px);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-14px);
     font-weight: var(--font-weight-normal);
-    font-family: var(--font-family-base);
+    font-family: var(--font-family);
     border: none;
     background-color: var(--color-background);
     color: var(--color-text-secondary);
