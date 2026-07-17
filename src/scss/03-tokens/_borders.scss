@@ -1,7 +1,7 @@
 @use '../02-tools' as tools;
 
-:root {
-    --border-radius-base: #{tools.pixel-to-rem(4px)};
-    --border-width-base: 1px;
-    --border-style-base: solid;
+@mixin borders {
+    --border-radius: #{tools.pixel-to-rem(4px)};
+    --border-width: 1px;
+    --border-style: solid;
 }
