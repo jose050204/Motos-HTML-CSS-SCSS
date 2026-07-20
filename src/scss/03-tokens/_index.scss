@@ -1,5 +1,13 @@
-@forward 'borders';
-@forward 'colors';
-@forward 'fonts';
-@forward 'sizings';
-@forward 'spacings';
+@use 'borders';
+@use 'colors';
+@use 'fonts';
+@use 'sizings';
+@use 'spacings';
+
+:root {
+    @include borders.borders;
+    @include colors.colors;
+    @include fonts.fonts;
+    @include sizings.sizings;
+    @include spacings.spacings;
+}
