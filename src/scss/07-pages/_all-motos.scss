@@ -1,0 +1,16 @@
+@use '../02-tools' as tools;
+
+
+.main {
+    padding: #{tools.pixel-to-rem(64px)} #{tools.pixel-to-rem(32px)};
+}
+
+
+
+
+
+
+
+
+
+
