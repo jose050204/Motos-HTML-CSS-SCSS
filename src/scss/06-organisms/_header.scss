@@ -1,0 +1,58 @@
+@use '../02-tools' as tools;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-16px) var(--spacing-32px);
+    background-color: var(--color-background);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16px);
+}
+
+.header__user {
+    display: none;
+
+    @include tools.breakpoint(tablet) {
+        display: flex;
+    }
+}
+
+.header__menu-toggle {
+    display: none;
+    @include tools.breakpoint(mobile) {
+        display: flex;
+    }
+}
+
+.header__nav {
+    display: none;
+
+    @include tools.breakpoint(tablet) {
+        display: flex;
+    }
+}
+
+.header__logo img {
+    width: var(--size-icon-logo);
+}
+
+.header__user img {
+    width: var(--size-icon-user);
+}
+
+.header__menu-toggle img {
+    width: var(--size-icon-menu);
+}
+
+.header__menu-toggle {
+    display: flex;
+
+    @include tools.breakpoint(tablet) {
+        display: none;
+    }
+}

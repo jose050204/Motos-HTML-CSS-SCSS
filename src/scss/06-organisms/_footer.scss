@@ -1,0 +1,54 @@
+@use '../02-tools' as tools;
+
+.newsletter {
+    text-align: center;
+    padding: var(--spacing-32px);
+}
+
+.newsletter__title {
+    font-size: var(--font-size-28px);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-24px);
+}
+
+.newsletter__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--spacing-24px);
+    flex-wrap: wrap;
+}
+
+.newsletter__field {
+    flex: 1;
+    max-width: #{tools.pixel-to-rem(370px)} ;
+    min-width: #{tools.pixel-to-rem(200px)};
+}
+
+.newsletter__label {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-16px);
+    font-family: var(--font-family);
+    text-align: left;
+    align-self: flex-start;
+}
+
+.newsletter__button {
+    padding: #{tools.pixel-to-rem(12px)};
+}
+
+.footer {
+    background-color: var(--color-background);
+}
+
+.footer__nav {
+    padding: var(--spacing-24px) var(--spacing-32px);
+    border-top: var(--border-width) var(--border-style) var(--border-top-color);
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-24px);
+}

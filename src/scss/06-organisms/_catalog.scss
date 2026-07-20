@@ -1,0 +1,29 @@
+@use '../02-tools' as tools;
+
+.main__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-8px);
+    margin-top: var(--spacing-24px);
+}
+
+.main__count {
+    font-size: var(--font-size-28px);
+    font-weight: var(--font-weight-bold);
+    margin-top: var(--spacing-24px);
+    margin-bottom: var(--spacing-32px);
+}
+
+.main__catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-40px);
+
+    @include tools.breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tools.breakpoint(desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
