@@ -1,79 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motos-HTML-CSS-SCSS</title>
     <link rel="stylesheet" href="../src/css/styles.css">
 </head>
+
 <body>
 
 
     <header class="header">
         <a href="#" class="header__logo">
-            <img src="" alt="Logo de Moto">
+            <img src="../src/assets/icons/Logo-moto.svg" alt="Logo de Moto">
         </a>
         <div class="header__actions">
             <nav class="header__nav">
-                <a href="#" class="btn btn--secondary">Ver todas las motos</a>
+                <a href="#" class="btn btn--primary">Ver todas las motos</a>
             </nav>
             <a href="#" class="header__user">
-                <img src="" alt="Logo de Usuario">
+                <img src="../src/assets/icons/Logo-user.svg" alt="Logo de Usuario">
                 <span>Usuario</span>
             </a>
         </div>
         <button class="header__menu-toggle">
-            <img src="" alt="Menu hamburguesa">
+            <img src="../src/assets/icons/Burguer.svg" alt="Menu hamburguesa">
         </button>
     </header>
 
 
 
     <main class="main">
-        <h1 class="main__title">Todas las motos </h1>
+        <h1 class="title main__title">Todas las motos </h1>
         <div class="main__filters">
-            <button type="button" class="chip chip--active">Electrica</button>
-            <button type="button" class="chip chip--active">Automatica</button>
-            <button type="button" class="chip">Gasolina</button>
-            <button type="button" class="chip">Diesel</button>
+            <button class="chip chip--active">Electrica</button>
+            <button class="chip chip--active">Automatica</button>
+            <button class="chip">Gasolina</button>
+            <button class="chip">Diesel</button>
         </div>
         <p class="main__count">8 resultados de motos eléctrica automática</p>
 
         <section class="main__catalog">
             <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
                 <h2 class="card__title">Moto</h2>
                 <div class="card__chips">
                     <span class="chip">Eléctrica</span>
                     <span class="chip">Automática</span>
                 </div>
                 <div class="card__discount">
-                    <img src="#" alt="Logo descuento" class="card_discount-icon">
-                    <span>Desde 5.000€ (con IVA)</span>
-                </div>
-                <div class="card__price-row">
-                    <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
-                </div>
-                <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
-            </article>
-
-            <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
-                <h3 class="card__title">Moto</h3>
-                <div class="card__chips">
-                    <span class="chip">Eléctrica</span>
-                    <span class="chip">Automática</span>
-                </div>
-                <div class="clard__price-row">
-                    <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
+                    <div class="card__discount-info">
+                        <img src="../src/assets/icons/Logo-discount.svg" alt="Logo descuento"
+                            class="card__discount-icon">
+                        <span>Desde 5.000€ (con IVA)</span>
+                    </div>
+                    <a href="#" class="link card__link">Ver detalles</a>
                 </div>
                 <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
             </article>
 
             <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
                 <h3 class="card__title">Moto</h3>
                 <div class="card__chips">
                     <span class="chip">Eléctrica</span>
@@ -81,13 +69,13 @@
                 </div>
                 <div class="card__price-row">
                     <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
+                    <a href="#" class="link card__link">Ver detalles</a>
                 </div>
                 <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
             </article>
 
             <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
                 <h3 class="card__title">Moto</h3>
                 <div class="card__chips">
                     <span class="chip">Eléctrica</span>
@@ -95,13 +83,13 @@
                 </div>
                 <div class="card__price-row">
                     <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
+                    <a href="#" class="link card__link">Ver detalles</a>
                 </div>
                 <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
             </article>
 
             <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
                 <h3 class="card__title">Moto</h3>
                 <div class="card__chips">
                     <span class="chip">Eléctrica</span>
@@ -109,13 +97,13 @@
                 </div>
                 <div class="card__price-row">
                     <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
+                    <a href="#" class="link card__link">Ver detalles</a>
                 </div>
                 <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
             </article>
 
             <article class="card">
-                <img src="#" alt="Imagen de moto" class="card__image">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
                 <h3 class="card__title">Moto</h3>
                 <div class="card__chips">
                     <span class="chip">Eléctrica</span>
@@ -123,36 +111,54 @@
                 </div>
                 <div class="card__price-row">
                     <span class="card__price">Desde 10.000€ (con IVA)</span>
-                    <a href="#" class="card__link">Ver detalles</a>
+                    <a href="#" class="link card__link">Ver detalles</a>
+                </div>
+                <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
+            </article>
+
+            <article class="card">
+                <img src="../src/assets/images/Moto.png" alt="" class="card__image">
+                <h3 class="card__title">Moto</h3>
+                <div class="card__chips">
+                    <span class="chip">Eléctrica</span>
+                    <span class="chip">Automática</span>
+                </div>
+                <div class="card__price-row">
+                    <span class="card__price">Desde 10.000€ (con IVA)</span>
+                    <a href="#" class="link card__link">Ver detalles</a>
                 </div>
                 <button type="button" class="btn btn--primary card__button">Configurar esta moto</button>
             </article>
         </section>
     </main>
 
-    <section class="newsletter">
-        <h2 class="newsletter__title">¿Quieres estar informado de las novedades?</h2>
-        <form class="newsletter__form">
-            <div class="newsletter__field">
-                <label for="newsletter-email" class="newsletter__label">Email</label>
-                <input type="email" class="newsletter__input" placeholder="nombre@correo.com" id="newsletter-email">
-            </div>
-            <button type="submit" class="btn btn--primary newsletter__button">Suscríbete</button>
-        </form>
-    </section>
+
 
     <footer class="footer">
+        <section class="newsletter">
+            <h2 class="newsletter__title">¿Quieres estar informado de las novedades?</h2>
+            <form class="newsletter__form">
+                <div class="input-field newsletter__field">
+                    <label for="newsletter-email" class="newsletter__label">Email</label>
+                    <input type="email" class="input newsletter__input" placeholder="nombre@correo.com"
+                        id="newsletter-email">
+                </div>
+                <button type="submit" class=" btn btn--primary newsletter__button">Suscríbete</button>
+            </form>
+        </section>
+
         <nav class="footer__nav">
             <ul class="footer__menu">
-                <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Política de Privacidad</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Política de Cookies</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Nota Legal</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Mapa de sitio</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Accesibilidad</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Contacto</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Política de Privacidad</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Política de Cookies</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Nota Legal</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Mapa de sitio</a></li>
+                <li class="footer__item"><a href="#" class="link footer__link">Accesibilidad</a></li>
             </ul>
         </nav>
     </footer>
-    
+
 </body>
+
 </html>
